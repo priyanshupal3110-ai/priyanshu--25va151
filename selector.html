@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*body{
+    color:aqua;
+}
+.box{
+color: brown;
+}
+div p{
+    color: mediumvioletred;
+}
+.box >p{
+    background-color: blue;
+}
+div ~ p{
+    color:blueviolet;
+}*/
+a:hover{
+    color:rgb(42, 67, 165);
+    font-size: 20px;
+}
+a:active{
+    color:rgb(95, 160, 159);
+}
+/*a:visited{
+    color:chocolate;
+}   */
+a:link{
+    text-decoration: none; font size: larger;
+}
+ul{
+    list-style:none; display: flex;
+}
+ul li{
+    margin: 20px; border-right: 1px solid rgb(9, 255, 0);
+    padding-right: 20px;
+}
+ul li a:hover{
+    color:pink;
+}
+/*ul li:nth child(5){
+    border-right: 0px;
+}
+    contact ke bagal ki line remove krne ke liye*/
+    .para{
+        color:rgb(213, 220, 20);
+    }
+    .para::first-letter{
+        color: brown; font-size: large;
+    }
+    .para::first line{
+        background-color: aqua;
+    }
+    .para::after{
+        content:"Read more";
+        color:blueviolet;
+        font-size: 20px;
+    }
+ </style>
+</head>
+<body>
+    <!---CSS Combinators-->
+
+    <div class="box">
+        <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore est natus illo omnis corrupti provident vitae quaerat accusamus? Nesciunt consequuntur accusamus facilis recusandae delectus repellat itaque dolore necessitatibus quam minus!</p>
+         <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique soluta praesentium possimus consequuntur, officia repudiandae perspiciatis perferendis accusamus neque tenetur veritatis iste reprehenderit optio, explicabo vitae eaque iusto odit aperiam?</p>
+        </div>
+        </div>
+        <!--CSS Pseudo classes: sttle for a special state of an element-->
+        <a href="">Visit this link</a>
+        <ul type="none">
+            <li>home</li>
+            <li>services</li>
+            <li>gallery</li>
+            <li>contact</li>
+            <li style="border: 0;">contact</li><br></br>
+            </ul>
+            
+            <!--CSS pseudo-->
+            <p class=".para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dignissimos omnis officiis sapiente natus voluptatum sint voluptate quisquam ducimus quaerat doloribus, facilis maiores, ex neque earum, doloremque consequuntur! Corporis, magni!</p>
+</body>
+</html>
+</body>
+</html>
