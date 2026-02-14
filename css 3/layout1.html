@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 01</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 900px;
+            height: auto;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            align-items: baseline;
+        }
+        #logo,nav,header,section,footer{
+            background-color: #999;
+            width: 900px;
+        }
+        #logo{
+            height: 100px; line-height: 100px;
+        }
+        nav{
+            height: 80px; line-height:80px;
+        }
+        header{
+            height: 150px; line-height: 150px;
+        }
+        section{
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            
+        }
+        #left{
+            flex-grow: 1;
+            background-color: #888;
+            line-height: 600px;
+        }
+        #right{
+            flex-grow: 2;
+            background-color: #888;
+            line-height: 600px;
+        }
+
+        footer{
+            height: 80px;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+       
+        <div id="logo"><h2>Logo</h2></div>
+        <nav><h2>Navigation</h2></nav>
+
+         <header><h2>Header/Banner</h2></header>
+        <section>
+            <div id="left">
+                <h2>Left</h2>
+            </div>
+            <div id="right">
+                <h2>Right</h2>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </main>
+    
+</body>
+</html>
