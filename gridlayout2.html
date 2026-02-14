@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            display: grid;
+          /* grid-template-columns: repeat(3,1fr);*/
+           grid-template-rows:100px 50px 300px 120px 80px;
+            gap:10px;
+
+        }
+        .box{
+            background-color:lightgoldenrodyellow;
+           /* height: 200px;*/
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">Logo</div>
+        <div class="box">Navigation</div>
+        <div class="box">Header</div>
+        <div class="box">Sidebar</div>
+        <div class="box"> Boby area</div>
+        <div class="box">Footer</div>
+    </main>
+        
+        
+</body>
+</html>

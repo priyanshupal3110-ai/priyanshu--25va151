@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+  <style>
+  body {
+  margin: 0;
+  font-family: serif;
+  background: #eee;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  background: #ddd;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  min-height: 400px;
+}
+
+
+.aside {
+  background: #e6e6e6;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  border-left: 2px solid #f6f2f2;
+  background: #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #dddddd;
+  font-size: 20px;
+}
+    </style>    
+  
+</head>
+<body>
+
+  <header class="header"><h1></h1>Hello World!</h1></header>
+
+  <div class="container">
+    <aside class="aside"><h1></h1>Aside<h1></h1></aside>
+
+    <div class="content">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+      <div class="box">box4</div>
+    </div>
+  </div>
+
+  <footer class="footer"><h1></h1>Footer<h1></h1></footer>
+
+</body>
+</html>

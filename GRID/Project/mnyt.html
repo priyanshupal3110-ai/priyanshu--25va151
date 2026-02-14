@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Clone</title>
+    <style>
+        /* Reset default margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff3f6c;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            color: #ff3f6c;
+        }
+
+        /* Search bar */
+        .search-bar input {
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('unnamed (1).png') center/cover no-repeat;
+            margin-bottom: 20px;
+        }
+
+        /* Product grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background: white;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 10px;
+        }
+
+        .product-info h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .product-info p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .price {
+            color: #ff3f6c;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Myntra</div>
+        <nav>
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>Home & Living</li>
+                <li>Beauty</li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="product-card">
+            <img src= shopping.avif alt="Product 1">
+            <div class="product-info">
+                <h4>Men's T-Shirt</h4>
+                <p class="price">₹499</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="shopping.webp" alt="Product 2">
+            <div class="product-info">
+                <h4>Women's Dress</h4>
+                <p class="price">₹999</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="202e55eaa6cf3edd3e857e9aa81d59be16428516.avif" alt="Product 3">
+            <div class="product-info">
+                <h4>Kids' Jacket</h4>
+                <p class="price">₹799</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="Moonlit_Serenity_3.webp" alt="Product 4">
+            <div class="product-info">
+                <h4>Home Decor</h4>
+                <p class="price">₹1299</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Myntra Clone | Created for learning purposes
+    </footer>
+
+</body>
+</html>
