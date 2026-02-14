@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* body{
+            color: aqua;
+        } */
+         /* .box{
+            color: brown;
+         } */
+
+         /* div p{
+            color:#999 ;
+         } */
+         /* .box > p{
+            background-color: blue;
+         } */
+
+         /* div ~ p{
+            color: blueviolet;
+         } */
+
+         a:hover{
+            color: brown;
+            font-size: 20px;
+         }
+
+         a:active{
+            color: bisque;
+         }
+         /* a:visited{
+            color: aqua;
+         } */
+          a:link{
+            text-decoration: none; font-size: larger;
+          }
+
+          ul {
+            list-style:none; display: flex;
+          }
+          ul li {
+            margin: 20px; border-right: 1px solid #999;
+            padding-right: 20px;
+          }
+          ul li:hover{
+            color: blue;
+          }
+          ul li:nth-child(5){
+            border-right: 0px;
+          }
+
+          .para{
+            color: blue;
+          }
+
+          .para::first-letter{
+            color: brown; font-size: large;
+          }
+          .para::first-line{
+            background-color: aqua;
+          }
+          .para::after{
+            content: "Read More";
+            color: #f04;
+            font-size: 20px;
+          }
+    </style>
+</head>
+<body>
+    <!--CSS Combinators-->
+
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe magnam similique minus repellendus cumque odio reprehenderit veritatis quae placeat fugiat ut necessitatibus quisquam, maxime sapiente repudiandae aliquam soluta ex recusandae!
+        </p>
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus similique ullam natus obcaecati sequi optio facere, repudiandae nesciunt nam, expedita numquam odit? Libero ratione praesentium a enim quidem numquam!
+            </p>
+        </div>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nesciunt harum nostrum! Numquam, expedita harum officia perspiciatis dolorem optio amet maxime incidunt distinctio iste facere accusamus officiis neque laborum voluptatum!</p>
+
+    <!--CSS Pseudo-classes:  style for a special state of an element.-->
+
+    <a href="">Visit this link</a>
+    <ul>
+        <li>home</li>
+        <li>services</li>
+        <li>about</li>
+        <li>gallery</li>
+        <li>contact</li>
+    </ul>
+
+    <!--CSS Pseudo-Elements: style a specific part of an elemen-->
+    <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quia itaque tenetur dignissimos, consequuntur voluptate minus ipsa cum eligendi facilis exercitationem, corrupti deleniti velit et odio quis, perspiciatis commodi voluptatum.
+    </p>
+</body>
+</html>
