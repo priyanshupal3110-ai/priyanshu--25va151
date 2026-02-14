@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrected Layout</title>
+    <style>
+        /* Apply box-sizing everywhere */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            gap: 20px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        nav,
+        header,
+        article,
+        aside,
+        footer {
+            background-color: #999;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            border-radius: 6px;
+        }
+
+        /* Make layout responsive */
+        @media (max-width: 600px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>nav</nav>
+        <header>header</header>
+
+        <section>
+            <article>article</article>
+            <aside>aside</aside>
+        </section>
+
+        <footer>footer</footer>
+    </main>
+</body>
+
+</html>
