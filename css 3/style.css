@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color:#F5F9FC;
+    background-image: url('body_bkg.png');
+    background-position:top left;
+    background-repeat: no-repeat; */
+    background: url('website-background.jpg') no-repeat top right #2F2F2F;
+    background-size: cover;
+    color: aliceblue;
+    font-size: 34px;
+
+}
+p{
+    font-family: arial;
+    font-size: 30px;
+    color: rgb(73, 232, 78);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 10px #FFF;
+    /* text-wrap:initial; */
+    /* text-overflow: ; */
+    clear:both;
+
+}
+#para{
+    color: aliceblue;
+    display: inline-block;
+}
+img{
+    float: left;
+}
